@@ -9,12 +9,16 @@ int main (){
     srand (time(NULL)); 
     
     for (int i = 0; i < 50; i++){
-        i = rand () % (max - min + 1) + min; 
-        if (i >= 8){
-            conta++; 
-        }
+        array[i] = rand () % (max - min + 1) + min; 
     }
-    printf ("Il numero 8 è uscito %d volte", conta); 
+
+    for (int i = 0; i < 50; i++){
+        if (array[i] > 8){
+            conta++; 
+        } 
+    }
+    
+    printf ("I numeri maggiori di 8 sono usciti %d volte\n", conta); 
 
     return 0;
 }
