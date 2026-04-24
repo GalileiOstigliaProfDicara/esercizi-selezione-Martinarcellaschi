@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main (){
-    float arrey[8], somma, media; 
+    float array[8], somma, media; 
 
     for (int i = 0; i < 8; i++){
         printf ("Inserisci un numero reale: "); 
