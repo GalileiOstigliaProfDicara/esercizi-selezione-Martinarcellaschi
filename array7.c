@@ -11,7 +11,9 @@ int main (){
     }
 
     for (int i = 0; i < 10; i++){
+        if (voti[i]>=6 && voti[i]<=10){
         conta[voti[i] - 6] ++; 
+        }
     }
 
     for (int i = 0; i < 5; i++){
